@@ -107,7 +107,7 @@ tvframework
 tvgmscore
 tvvending"
 
-gappstvstock="backdrop
+gappstvmini="backdrop
 castreceiver
 leanbacklauncher
 livechannels
@@ -116,15 +116,17 @@ secondscreensetup
 secondscreenauthbridge
 talkback
 tvkeyboardgoogle
-tvmovies
-tvmusic
 tvpackageinstallergoogle
 tvplaygames
 tvremote
 tvsearch
 tvwidget
+tvwallpaper"
+
+gappstvstock="tvmovies
+tvmusic
+tvplaygames
 tvyoutube
-tvwallpaper
 webviewgoogle"
 
 miniremove=""
@@ -160,7 +162,8 @@ get_supported_variants(){
     nano)           supported_variants="pico nano"; gappsremove_variant="super";;
     pico)           supported_variants="pico"; gappsremove_variant="super";;
 
-    tvstock)        supported_variants="tvstock"; gappsremove_variant="tvstock";;
+    tvstock)        supported_variants="tvmini tvstock"; gappsremove_variant="tvstock";;
+    tvmini)         supported_variants="tvmini"; gappsremove_variant="tvmini";;
 
     *)              supported_variants="";;
   esac

@@ -101,7 +101,7 @@ if [ "$ARCH" != "arm" ] && [ "$ARCH" != "arm64" ]; then #For all non-arm(64) pla
 fi
 if [ "$API" -lt "22" ]; then
   case "$VARIANT" in
-    super|tvstock)  echo "ERROR! Variant $VARIANT cannot be built on API level $API"; exit 1;;
+    super|tvstock|tvmini)  echo "ERROR! Variant $VARIANT cannot be built on API level $API"; exit 1;;
   esac
 fi;
 echo "Generating Open GApps $VARIANT package for $ARCH with API level $API..."

@@ -211,6 +211,10 @@ tvstock_gapps_list="
 '"$gappstvstock"'
 ";
 
+tvmini_gapps_list="
+'"$gappstvmini"'
+";
+
 # _____________________________________________________________________________________________________________________
 #                                             Default Stock/AOSP Removal List (Stock GApps Only)
 default_stock_remove_list="

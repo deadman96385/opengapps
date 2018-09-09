@@ -471,7 +471,7 @@ lib64/$WebView_lib_filename
     webviewgappsremove=""
 
   # On AndroidTV 6.0+ packageinstallergoogle is also installed (next to the tvpackageinstallergoogle)
-  gappstvstock="$gappstvstock
+  gappstvmini="$gappstvmini
 packageinstallergoogle"
   else
     gappsmicro="$gappsmicro
@@ -481,7 +481,7 @@ googletts"
 lib64/libwebviewchromium.so" #on non-Marshmallow the WebViewlibs are to be explictly included as a Google WebView file in gapps-remove.txt
 
   # On pre-Marshmallow TV Voiceinput exists
-  gappstvstock="$gappstvstock
+  gappstvmini="$gappstvmini
 tvvoiceinput"
   fi
 }
@@ -499,7 +499,7 @@ storagemanagergoogle"
 extservicesgoogle
 extsharedgoogle"
     # On Nougat and higher the TV Recommendations exist
-    gappstvstock="$gappstvstock
+    gappstvmini="$gappstvmini
 leanbackrecommendations"
     # On Nougat and higher we might want to install the WebViewStub instead of WebViewGoogle in some situations
     gappsstock_optional="$gappsstock_optional
@@ -538,7 +538,7 @@ androidplatformservices"
     fi
     # On Oreo and higher a different launcher exists
     # Also, the suw works without needing platform signed
-    gappstvstock="$gappstvstock
+    gappstvmini="$gappstvmini
 setupwraith
 tvlauncher
 tvrecommendations"
